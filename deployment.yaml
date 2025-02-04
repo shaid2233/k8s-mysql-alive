@@ -15,5 +15,5 @@ spec:
         app: mysql-alive
     spec:
       containers:
-      - image: shai2233/mysql-alive:18f72e0
-        name: mysql-alive
+        - image: 'shai2233/mysql-alive:'
+          name: mysql-alive
