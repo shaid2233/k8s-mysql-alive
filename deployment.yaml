@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: mysql-alive
+  name: mysql-alive
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql-alive
+  template:
+    metadata:
+      labels:
+        app: mysql-alive
+    spec:
+      containers:
+      - image: shai2233/mysql-alive:18f72e0
+        name: mysql-alive
